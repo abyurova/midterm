@@ -1,0 +1,13 @@
+<div class="post">
+{{author}} {{title}} {{text}} <button class="btn btn-default" (click)="delete()">delete</button> 
+<br>
+{{myDate}} <button class="btn btn-default" (click)="like()">like</button> {{likeCounter}} 
+<br>
+<input type="text" class="form-control" [(ngModel)] = "comment" placeholder="you can leave a comment">
+<button class="btn btn-default" (click)="addComment()">leave</button> 
+
+</div>
+<div class="comments">
+    <ng-template #comments></ng-template>
+  </div>    
+ 

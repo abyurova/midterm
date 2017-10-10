@@ -1,0 +1,21 @@
+<div class="master">
+    <div class="form">
+      <h1>My Post </h1>
+    </div>
+  <div class="form">
+  <span> author: </span> <input type="text" class="form-control"[(ngModel)] = "author" id="a">
+  <div>
+      <div class="form">
+ <span> title: </span> <input type="text" class="form-control" [(ngModel)]="title" id="a">
+      </div>
+      <div class="form">
+  <span>text:</span>  <textarea class="form-control" name="" id="a" cols="30" rows="10" [(ngModel)]="text"></textarea>
+      </div>
+      <div class="form">
+      <button class="btn btn-success" (click)="add()">add</button>
+      </div>
+</div>
+<br>
+<div class="detail">
+  <ng-template #detail></ng-template>
+</div>    
